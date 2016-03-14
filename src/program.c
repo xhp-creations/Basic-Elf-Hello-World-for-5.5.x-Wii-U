@@ -1,7 +1,7 @@
 #include "program.h"
 #include "draw.h"
 
-unsigned int vpad_handle;
+unsigned int vpad_handle = 0;
 unsigned int (*VPADRead)(int controller, VPADData *buffer, unsigned int num, int *error);
 
 int memcmp(void *ptr1, void *ptr2, uint32_t length) // Implement our own memcmp
