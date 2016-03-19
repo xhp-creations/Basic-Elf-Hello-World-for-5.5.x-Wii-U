@@ -4,19 +4,6 @@
 unsigned int vpad_handle = 0;
 unsigned int (*VPADRead)(int controller, VPADData *buffer, unsigned int num, int *error);
 
-int memcmp(void *ptr1, void *ptr2, uint32_t length) // Implement our own memcmp
-{
-	uint8_t *check1 = (uint8_t*) ptr1;
-	uint8_t *check2 = (uint8_t*) ptr2;
-	uint32_t i;
-	for (i = 0; i < length; i++)
-	{
-		if (check1[i] != check2[i]) return 1;
-	}
-
-	return 0;
-}
-
 void* memcpy(void* dst, const void* src, uint32_t size) // Implement our own memcpy
 {
 	uint32_t i;
