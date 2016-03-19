@@ -12,7 +12,6 @@
 extern unsigned int vpad_handle;
 extern unsigned int (*VPADRead)(int controller, VPADData *buffer, unsigned int num, int *error);
 
-int memcmp(void *ptr1, void *ptr2, uint32_t length);
 void* memcpy(void* dst, const void* src, uint32_t size);
 void _osscreeninit();
 void _clearscreen();
